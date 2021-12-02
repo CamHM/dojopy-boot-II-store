@@ -1,25 +1,29 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import './ProductCard.css';
-
-/*
-nombre (producto)
-precio (producto)
-imagen (producto)
-input > cantidad
-botón > agregar al carrito
-
-props > propiedades
-* */
+import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
 const ProductCard = ({ name, price, cover }) => {
-
     return (
-        <article className="product-card">
-            <img src={cover} alt={name} />
-            <h2>{name}</h2>
-            <h3>${price}</h3>
-        </article>
+        <Card sx={{ maxWidth: 345 }}>
+            <CardMedia
+                component="img"
+                alt="green iguana"
+                height="240"
+                image={cover}
+            />
+            <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                    {name}
+                </Typography>
+                <Typography variant="h5" color="text.secondary">
+                    ${price}
+                </Typography>
+            </CardContent>
+        </Card>
     )
 };
 

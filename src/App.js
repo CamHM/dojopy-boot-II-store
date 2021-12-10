@@ -1,10 +1,11 @@
 import './App.css';
 import Products from "./pages/products/Products";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import { home, products, login, users, cart } from './routes/routes';
 import Login from "./pages/login/Login";
 import Users from "./pages/users/Users";
 import Cart from "./pages/cart/Cart";
+import NotFound from "./pages/notFound/NotFound";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Router>
             <Switch>
                 <Route exact path={home}>
-                    <h1>Home</h1>
+                    <Redirect to={products} />
                 </Route>
                 <Route exact path={products}>
                     <Products />
@@ -25,6 +26,9 @@ function App() {
                 </Route>
                 <Route exact path={cart}>
                     <Cart />
+                </Route>
+                <Route path="*">
+                    <NotFound />
                 </Route>
             </Switch>
         </Router>

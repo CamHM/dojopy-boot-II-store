@@ -1,14 +1,14 @@
 .products {
-    width: 100%;
-    min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .products .content {
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
-    grid-column-gap: 50px;
-    margin: auto;
-    padding: 2%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-column-gap: 50px;
+  margin: auto;
+  padding: 2%;
 }

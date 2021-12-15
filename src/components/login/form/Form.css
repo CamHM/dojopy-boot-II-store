@@ -1,14 +1,14 @@
 .login-form {
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
 }
 
 .login-form > * {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .login-form .error {
-    color: red;
-    margin: 0;
+  color: red;
+  margin: 0;
 }

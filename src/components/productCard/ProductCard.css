@@ -1,3 +1,45 @@
 .product-card {
- border: lightgray 1px solid;
+  border: lightgray 1px solid;
+  padding-bottom: 15px;
+}
+
+.product-card .details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card .details input {
+  max-width: 80px;
+  font-size: 15px;
+  outline: none;
+}
+
+.product-card .details input:active,
+.product-card .details input:focus {
+  border: 2px deepskyblue solid;
+}
+
+.product-card .submit {
+  background-color: cadetblue;
+  border: none;
+  outline: none;
+  width: 94%;
+  margin-left: 3%;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+
+.product-card .submit:active {
+  background-color: deepskyblue;
+  transform: scale(0.97);
+}
+
+.product-card .submit:disabled,
+.product-card .submit[disabled] {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: not-allowed;
 }

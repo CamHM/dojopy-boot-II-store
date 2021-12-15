@@ -1,0 +1,38 @@
+.cart {
+    min-height: 100vh;
+    padding: 0 3%;
+}
+
+.cart .content {
+    margin: auto;
+    min-width: 600px;
+    max-width: 1000px;
+}
+
+.cart .content .delete {
+    cursor: pointer;
+    user-select: none;
+    font-weight: bolder;
+}
+
+.cart .content .delete:hover {
+    color: red;
+}
+
+.cart .content .delete:active {
+    transform: scale(0.9);
+}
+
+.cart .total {
+    background-color: rgba(18, 178, 227, 0.25);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: right;
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.cart td, .cart th {
+    padding: 10px 20px;
+    text-align: center;
+}

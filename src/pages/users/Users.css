@@ -1,23 +1,23 @@
 .users {
-    min-height: 100vh;
-    text-align: center;
+  min-height: 100vh;
+  text-align: center;
 }
 
 .users > .title {
-    font-size: 45px;
-    color: skyblue;
+  font-size: 45px;
+  color: skyblue;
 }
 
 .users > .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
 }
 
 .users > .container .user-card {
-    min-height: 150px;
+  min-height: 150px;
 }
 
 .users > .container .user-card:hover {
-    color: deepskyblue;
+  color: deepskyblue;
 }
